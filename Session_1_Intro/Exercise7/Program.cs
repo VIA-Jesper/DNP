@@ -1,13 +1,12 @@
 ﻿using System;
 
-namespace Session_1_Intro
+namespace Exercise7
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            
+            Console.WriteLine(int.Parse(args[0]) > int.Parse(args[1]) ? args[0] : args[1]);
         }
     }
 }
