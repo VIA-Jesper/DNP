@@ -6,7 +6,17 @@ namespace Exercise1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var student = new Student();
+            var dnpStudent = new DNPStudent();
+
+            student.SayHi();
+            dnpStudent.SayHi();
+
+            // upcasting child object
+            // virtual override => child method used
+            // hiding with new => parent method used
+            student = dnpStudent;
+            student.SayHi();
         }
     }
 }
