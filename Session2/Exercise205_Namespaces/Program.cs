@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Exercise206_Namespaces
+namespace Exercise205_Namespaces
 {
     class Program
     {
