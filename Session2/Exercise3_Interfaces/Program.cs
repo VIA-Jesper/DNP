@@ -1,7 +1,7 @@
 ﻿using System;
-using Exercise3_Interfaces;
+using Exercise203_Interfaces;
 
-namespace Exercise3_Interfacess
+namespace Exercise203_Interfaces
 {
     class Program
     {

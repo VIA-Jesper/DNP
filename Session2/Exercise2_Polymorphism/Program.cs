@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Exercise2_Polymorphism
+namespace Exercise202_Polymorphism
 {
     class Program
     {

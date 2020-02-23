@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Exercise4_Collections
+namespace Exercise204_Collections
 {
     class Animal : IComparable<Animal>
     {

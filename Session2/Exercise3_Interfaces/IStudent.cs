@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Exercise3_Interfaces
+namespace Exercise203_Interfaces
 {
     interface IStudent
     {

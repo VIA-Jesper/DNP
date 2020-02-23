@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Exercise2_Polymorphism
+namespace Exercise202_Polymorphism
 {
     class Company
     {

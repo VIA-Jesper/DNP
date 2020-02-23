@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Exercise1
+namespace Exercise201
 {
     class DNPStudent : Student
     {

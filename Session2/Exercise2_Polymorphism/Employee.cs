@@ -1,4 +1,4 @@
-﻿namespace Exercise2_Polymorphism
+﻿namespace Exercise202_Polymorphism
 {
     internal abstract class Employee
     {

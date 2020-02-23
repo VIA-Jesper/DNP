@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Exercise3_Interfaces
+namespace Exercise203_Interfaces
 {
     class Company
     {

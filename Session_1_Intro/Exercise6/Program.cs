@@ -1,7 +1,7 @@
 ﻿using System;
-using Exercise6.DNP.MathLib;
+using Exercise106.DNP.MathLib;
 
-namespace Exercise6
+namespace Exercise106
 {
     class Program
     {
