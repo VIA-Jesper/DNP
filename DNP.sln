@@ -43,19 +43,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Session3", "Session3", "{5F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise301_MethodOverloading", "Session3\Exercise301_MethodOverloading\Exercise301_MethodOverloading.csproj", "{EEF867ED-B956-47C0-B8FC-AB753C686680}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise302_ExtensionMethods", "Session3\Exercise302_ExtensionMethods\Exercise302_ExtensionMethods.csproj", "{9FD0B7C3-7AB6-4FAE-8D1B-132F9ADA16E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise302_ExtensionMethods", "Session3\Exercise302_ExtensionMethods\Exercise302_ExtensionMethods.csproj", "{9FD0B7C3-7AB6-4FAE-8D1B-132F9ADA16E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise303_GenericStacks", "Session3\Exercise303_GenericStacks\Exercise303_GenericStacks.csproj", "{D490E8FF-3B23-4BEE-A749-AD5FE6781D98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise303_GenericStacks", "Session3\Exercise303_GenericStacks\Exercise303_GenericStacks.csproj", "{D490E8FF-3B23-4BEE-A749-AD5FE6781D98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise304_InterfaceAndGenerics", "Session3\Exercise304_InterfaceAndGenerics\Exercise304_InterfaceAndGenerics.csproj", "{7184F21D-58AE-4401-A509-EF0DF8B344F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise304_InterfaceAndGenerics", "Session3\Exercise304_InterfaceAndGenerics\Exercise304_InterfaceAndGenerics.csproj", "{7184F21D-58AE-4401-A509-EF0DF8B344F5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise305_OperatorOverloading", "Session3\Exercise305_OperatorOverloading\Exercise305_OperatorOverloading.csproj", "{CFE2EF8B-0287-4397-A440-F262044622F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise306_TernaryOperator_ConditionalOperator", "Session3\Exercise306_TernaryOperator_ConditionalOperator\Exercise306_TernaryOperator_ConditionalOperator.csproj", "{FA0749F1-0B26-46E1-A9E6-1D507A7B7EBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise306_TernaryOperator_ConditionalOperator", "Session3\Exercise306_TernaryOperator_ConditionalOperator\Exercise306_TernaryOperator_ConditionalOperator.csproj", "{FA0749F1-0B26-46E1-A9E6-1D507A7B7EBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise307_Delegates", "Session3\Exercise307_Delegates\Exercise307_Delegates.csproj", "{D5F7895C-7764-4E90-99A4-86F2A4EB405A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise307_Delegates", "Session3\Exercise307_Delegates\Exercise307_Delegates.csproj", "{D5F7895C-7764-4E90-99A4-86F2A4EB405A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise308_LambdaExpressions", "Session3\Exercise308_LambdaExpressions\Exercise308_LambdaExpressions.csproj", "{8DCDCDEF-7626-493A-8359-6E5CEC99A26C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise308_LambdaExpressions", "Session3\Exercise308_LambdaExpressions\Exercise308_LambdaExpressions.csproj", "{8DCDCDEF-7626-493A-8359-6E5CEC99A26C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Session4", "Session4", "{D046708F-41BD-4E94-9A78-ACCFCBCC488F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise401_Streaming", "Session4\Exercise401_Streaming\Exercise401_Streaming.csproj", "{08B150A0-5805-4010-B972-10C13C06C191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise402_Serialization", "Session4\Exercise402_Serialization\Exercise402_Serialization.csproj", "{8ABD2E08-407C-4023-ABD7-44F0E77C88A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise403_Threads", "Session4\Exercise403_Threads\Exercise403_Threads.csproj", "{CEE6B96B-728B-42F4-8E23-1A80FDD50708}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise404_TCP_Client", "Session4\Exercise404_TCP_Client\Exercise404_TCP_Client.csproj", "{0E920D34-DBD1-48E7-A076-4FBCCE3B4835}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise404_TCP_Server", "Session4\Exercise404_TCP_Server\Exercise404_TCP_Server.csproj", "{557F0791-9C6B-43B5-AADC-7F9813EB53ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +171,26 @@ Global
 		{8DCDCDEF-7626-493A-8359-6E5CEC99A26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DCDCDEF-7626-493A-8359-6E5CEC99A26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DCDCDEF-7626-493A-8359-6E5CEC99A26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08B150A0-5805-4010-B972-10C13C06C191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B150A0-5805-4010-B972-10C13C06C191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B150A0-5805-4010-B972-10C13C06C191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B150A0-5805-4010-B972-10C13C06C191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABD2E08-407C-4023-ABD7-44F0E77C88A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABD2E08-407C-4023-ABD7-44F0E77C88A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABD2E08-407C-4023-ABD7-44F0E77C88A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABD2E08-407C-4023-ABD7-44F0E77C88A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE6B96B-728B-42F4-8E23-1A80FDD50708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE6B96B-728B-42F4-8E23-1A80FDD50708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE6B96B-728B-42F4-8E23-1A80FDD50708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE6B96B-728B-42F4-8E23-1A80FDD50708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E920D34-DBD1-48E7-A076-4FBCCE3B4835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E920D34-DBD1-48E7-A076-4FBCCE3B4835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E920D34-DBD1-48E7-A076-4FBCCE3B4835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E920D34-DBD1-48E7-A076-4FBCCE3B4835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557F0791-9C6B-43B5-AADC-7F9813EB53ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557F0791-9C6B-43B5-AADC-7F9813EB53ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557F0791-9C6B-43B5-AADC-7F9813EB53ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557F0791-9C6B-43B5-AADC-7F9813EB53ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -188,6 +220,11 @@ Global
 		{FA0749F1-0B26-46E1-A9E6-1D507A7B7EBD} = {5FB25037-0C14-447D-B3B1-A41D2B0885E1}
 		{D5F7895C-7764-4E90-99A4-86F2A4EB405A} = {5FB25037-0C14-447D-B3B1-A41D2B0885E1}
 		{8DCDCDEF-7626-493A-8359-6E5CEC99A26C} = {5FB25037-0C14-447D-B3B1-A41D2B0885E1}
+		{08B150A0-5805-4010-B972-10C13C06C191} = {D046708F-41BD-4E94-9A78-ACCFCBCC488F}
+		{8ABD2E08-407C-4023-ABD7-44F0E77C88A3} = {D046708F-41BD-4E94-9A78-ACCFCBCC488F}
+		{CEE6B96B-728B-42F4-8E23-1A80FDD50708} = {D046708F-41BD-4E94-9A78-ACCFCBCC488F}
+		{0E920D34-DBD1-48E7-A076-4FBCCE3B4835} = {D046708F-41BD-4E94-9A78-ACCFCBCC488F}
+		{557F0791-9C6B-43B5-AADC-7F9813EB53ED} = {D046708F-41BD-4E94-9A78-ACCFCBCC488F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A8D25B40-5E5C-4D4F-9EA2-2075F9E34813}
