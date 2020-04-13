@@ -36,15 +36,10 @@ namespace Dotnetimals.Migrations
                         .HasColumnType("TEXT")
                         .HasMaxLength(20);
 
-                    b.Property<int?>("OrderId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
 
                     b.ToTable("Cats");
                 });
@@ -55,7 +50,7 @@ namespace Dotnetimals.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("OrderDatee")
+                    b.Property<DateTime>("OrderDate")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("OrderNumber")
@@ -66,11 +61,34 @@ namespace Dotnetimals.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("Dotnetimals.Entities.Cat", b =>
+            modelBuilder.Entity("Dotnetimals.Entities.OrderItem", b =>
                 {
-                    b.HasOne("Dotnetimals.Entities.Order", null)
-                        .WithMany("Cats")
-                        .HasForeignKey("OrderId");
+                    b.Property<int>("OrderId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CatId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("OrderId", "CatId");
+
+                    b.HasIndex("CatId");
+
+                    b.ToTable("OrderCats");
+                });
+
+            modelBuilder.Entity("Dotnetimals.Entities.OrderItem", b =>
+                {
+                    b.HasOne("Dotnetimals.Entities.Cat", "Cat")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("CatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Dotnetimals.Entities.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
