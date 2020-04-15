@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dotnetimals.Entities
 {
+    // followed this guide: https://softdevpractice.com/blog/many-to-many-ef-core/
     public class OrderItem
     {
         public int OrderId { get; set; }

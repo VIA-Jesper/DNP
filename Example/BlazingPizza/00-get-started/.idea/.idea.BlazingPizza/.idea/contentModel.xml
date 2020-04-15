@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\ghost\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\ghost\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ghost\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_BlazingPizza.-1216234970.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ghost\Documents\Github\DNP\Example\BlazingPizza\00-get-started" t="IncludeFlat">
+      <e p="BlazingPizza.Client" t="IncludeRecursive">
+        <e p="_Imports.razor" t="Include" />
+        <e p="App.razor" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BlazingPizza.Client.csproj" t="IncludeRecursive" />
+        <e p="libman.json" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="BlazingPizza.Client.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Orderstate.cs" t="Include" />
+        <e p="Pages" t="Include">
+          <e p="Authentication.razor" t="Include" />
+          <e p="Checkout.razor" t="Include" />
+          <e p="Index.razor" t="Include" />
+          <e p="MyOrders.razor" t="Include" />
+          <e p="OrderDetails.razor" t="Include" />
+        </e>
+        <e p="PizzaAuthenticationState.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Shared" t="Include">
+          <e p="AddressEditor.razor" t="Include" />
+          <e p="ConfiguredPizzaItem.razor" t="Include" />
+          <e p="ConfigurePizzaDialog.razor" t="Include" />
+          <e p="LoginDisplay.razor" t="Include" />
+          <e p="MainLayout.razor" t="Include" />
+          <e p="OrderReview.razor" t="Include" />
+          <e p="RedirectToLogin.razor" t="Include" />
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p="bootstrap.min.css" t="Include" />
+              <e p="bootstrap.min.css.map" t="Include" />
+            </e>
+            <e p="font" t="Include">
+              <e p="quicksand-v8-latin-300.woff" t="Include" />
+              <e p="quicksand-v8-latin-300.woff2" t="Include" />
+              <e p="quicksand-v8-latin-500.woff" t="Include" />
+              <e p="quicksand-v8-latin-500.woff2" t="Include" />
+              <e p="quicksand-v8-latin-700.woff" t="Include" />
+              <e p="quicksand-v8-latin-700.woff2" t="Include" />
+              <e p="quicksand-v8-latin-regular.woff" t="Include" />
+              <e p="quicksand-v8-latin-regular.woff2" t="Include" />
+              <e p="quicksand.css" t="Include" />
+            </e>
+            <e p="site.css" t="Include" />
+          </e>
+          <e p="img" t="Include">
+            <e p="bike.svg" t="Include" />
+            <e p="icon-512.png" t="Include" />
+            <e p="logo.svg" t="Include" />
+            <e p="pizza-slice.svg" t="Include" />
+            <e p="pizzas" t="Include">
+              <e p="bacon.jpg" t="Include" />
+              <e p="brit.jpg" t="Include" />
+              <e p="cheese.jpg" t="Include" />
+              <e p="margherita.jpg" t="Include" />
+              <e p="meaty.jpg" t="Include" />
+              <e p="mushroom.jpg" t="Include" />
+              <e p="pepperoni.jpg" t="Include" />
+              <e p="salad.jpg" t="Include" />
+            </e>
+            <e p="user.svg" t="Include" />
+          </e>
+          <e p="index.html" t="Include" />
+        </e>
+      </e>
+      <e p="BlazingPizza.ComponentsLibrary" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BlazingPizza.ComponentsLibrary.csproj" t="IncludeRecursive" />
+        <e p="LocalStorage.cs" t="Include" />
+        <e p="Map" t="Include">
+          <e p="Map.razor" t="Include" />
+          <e p="Marker.cs" t="Include" />
+          <e p="Point.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="BlazingPizza.ComponentsLibrary.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="deliveryMap.js" t="Include" />
+          <e p="leaflet" t="Include">
+            <e p="images" t="Include">
+              <e p="layers-2x.png" t="Include" />
+              <e p="layers.png" t="Include" />
+              <e p="marker-icon-2x.png" t="Include" />
+              <e p="marker-icon.png" t="Include" />
+              <e p="marker-shadow.png" t="Include" />
+            </e>
+            <e p="leaflet.css" t="Include" />
+            <e p="leaflet.js" t="Include" />
+          </e>
+          <e p="localStorage.js" t="Include" />
+          <e p="pushNotifications.js" t="Include" />
+        </e>
+      </e>
+      <e p="BlazingPizza.Server" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="Areas" t="Include">
+          <e p="Identity" t="Include">
+            <e p="Pages" t="Include">
+              <e p="_Layout.cshtml" t="Include" />
+              <e p="Shared" t="Include">
+                <e p="_LoginPartial.cshtml" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BlazingPizza.Server.csproj" t="IncludeRecursive" />
+        <e p="NotificationsController.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="BlazingPizza.Server.AssemblyInfo.cs" t="Include" />
+              <e p="BlazingPizza.Server.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="OidcConfigurationController.cs" t="Include" />
+        <e p="OrdersController.cs" t="Include" />
+        <e p="pizza.db" t="Include" />
+        <e p="PizzasController.cs" t="Include" />
+        <e p="PizzaStoreContext.cs" t="Include" />
+        <e p="PizzaStoreUser.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="SeedData.cs" t="Include" />
+        <e p="SpecialsController.cs" t="Include" />
+        <e p="Startup.cs" t="Include" />
+        <e p="ToppingsController.cs" t="Include" />
+      </e>
+      <e p="BlazingPizza.Shared" t="IncludeRecursive">
+        <e p="Address.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BlazingPizza.Shared.csproj" t="IncludeRecursive" />
+        <e p="LatLong.cs" t="Include" />
+        <e p="NotificationSubscription.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="BlazingPizza.Shared.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Order.cs" t="Include" />
+        <e p="OrderWithStatus.cs" t="Include" />
+        <e p="Pizza.cs" t="Include" />
+        <e p="PizzaSpecial.cs" t="Include" />
+        <e p="PizzaTopping.cs" t="Include" />
+        <e p="Topping.cs" t="Include" />
+        <e p="UserInfo.cs" t="Include" />
+      </e>
+      <e p="BlazingPizza.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
