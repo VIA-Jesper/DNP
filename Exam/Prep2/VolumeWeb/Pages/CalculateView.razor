@@ -1,0 +1,51 @@
+﻿@page "/calculate/view"
+@using VolumeWebService.VolumeCalculator
+@using VolumeWeb.Data
+@inject VolumeService VolumeService
+
+<h3>Calculate View</h3>
+
+
+<button class="btn btn-primary" @onclick="LoadData">Click to load</button>
+
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Type</th>
+        <th scope="col">Height</th>
+        <th scope="col">Radius</th>
+        <th scope="col">Volume</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var vol in volumeResults)
+    {
+        <tr>
+            <th scope="row">@vol.Id</th>
+            <td>@vol.Type</td>
+            <td>@vol.Height</td>
+            <td>@vol.Radius</td>
+            <td>@vol.Volume</td>
+        </tr>
+    }
+   
+    
+    </tbody>
+</table>
+
+
+@code {
+
+    private List<VolumeResult> volumeResults = new List<VolumeResult>();
+
+
+    private async void LoadData()
+    {
+        var result = await VolumeService.GetCalculations();
+        volumeResults = result;
+        StateHasChanged();
+    }
+
+}

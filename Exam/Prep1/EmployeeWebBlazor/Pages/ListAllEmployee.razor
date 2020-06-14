@@ -1,0 +1,91 @@
+﻿@page "/employees"
+@using EmployeeWebServices.Models
+@using EmployeeWebBlazor.Data
+@using System.Globalization
+
+@inject EmployeeService EmployeeService
+
+<h3>List Employees</h3>
+
+<label>Display employees:</label>
+<div class="form-check">
+    <label class="form-check-label">
+        <input type="checkbox" @bind="overTimeEmployees" class="form-check-input" value="">Overtime Employees
+    </label>
+</div>
+<div class="form-check">
+    <label class="form-check-label">
+        <input type="checkbox" @bind="regularCheckbox" class="form-check-input" value="">Regular Employees
+    </label>
+</div>
+<button class="btn btn-primary" @onclick="GetEmployees">Load selected</button>
+
+<br/>
+
+<div>
+    <p>Total payout displayed employees: @totalPayout</p>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Hourly wage</th>
+        <th scope="col">Hours per month</th>
+        <th scope="col">Sum</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    @if (Employees != null && Employees.Count > 0)
+    {
+        @foreach (var emp in Employees)
+        {
+            <tr>
+                <td>@emp.Name</td>
+                <td>@emp.HourlyWage</td>
+                <td>@emp.HoursPerMonth</td>
+                <td>@emp.GetMonthlyPay()</td>
+            </tr>
+        }
+    }
+
+    </tbody>
+</table>
+
+
+@code {
+
+    public List<Employee> Employees = new List<Employee>();
+
+    public bool overTimeEmployees;
+    public bool regularCheckbox;
+    public double totalPayout;
+
+
+
+    public async Task GetEmployees()
+    {
+
+        var overTimeEmp = new List<Employee>();
+        totalPayout = 0;
+
+        if (overTimeEmployees)
+        {
+            overTimeEmp = await EmployeeService.GetEmployees(true);
+            totalPayout += await EmployeeService.GetPayments(true);
+        }
+        var regularEmp = new List<Employee>();
+        if (regularCheckbox)
+        {
+            regularEmp = await EmployeeService.GetEmployees(false);
+            totalPayout += await EmployeeService.GetPayments(false);
+        }
+        Employees.Clear();
+        Employees.AddRange(overTimeEmp);
+        Employees.AddRange(regularEmp);
+        StateHasChanged();
+    }
+
+
+}

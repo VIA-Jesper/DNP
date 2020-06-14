@@ -1,0 +1,65 @@
+﻿@page "/employees/create"
+@using EmployeeWebBlazor.Data
+
+@inject EmployeeService EmployeeService
+
+<h3>Create Employee</h3>
+
+
+<div class="form-group">
+    <label for="usr">Name:</label>
+    <input type="text" class="form-control" id="usr" @bind="name">
+</div>
+
+<div class="form-group">
+    <label for="pay">Hourly wage:</label>
+    <input type="number" class="form-control" id="pay" @bind="wage">
+</div> 
+
+<div class="form-group">
+    <label for="hours">hours per month:</label>
+    <input type="number" class="form-control" id="hours" @bind="hours">
+</div> 
+
+<div class="form-group">
+    <button class="btn btn-default" @onclick="Create">Create employee</button>
+    <p @bind="label"></p>
+</div>
+
+
+@code {
+    string label = "";
+
+    private string name;
+    private double wage;
+    private double hours;
+
+
+    public void Clear()
+    {
+        name = "";
+        wage = 0;
+        hours = 0;
+    }
+
+    public async void Create()
+    {
+        try
+        {
+            var result = await EmployeeService.AddEmployee(name, wage, hours);
+            if (result != null)
+            {
+                Clear();
+                label = "Created";
+            }
+
+        }
+        catch (Exception e)
+        {
+            label = e.Message;
+        }
+        StateHasChanged();
+
+    }
+
+}

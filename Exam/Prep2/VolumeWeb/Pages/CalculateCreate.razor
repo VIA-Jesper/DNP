@@ -1,0 +1,80 @@
+﻿@page "/calculate/create"
+@using VolumeWeb.Data
+@inject VolumeService VolumeService
+
+<h3>CalculateCreate</h3>
+
+<div class="row">
+    <div class="col-md-6 offset-3">
+
+            <div class="form-group">
+                <label for="typeid">Select type:</label>
+                <select id="typeid" @bind="selectedType">
+                    <option value="cylinder" selected>Cylinder</option>
+                    <option value="cone">Cone</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="text2">Height</label>
+                <input @bind="selectedHeight" type="number" class="form-control" id="text2" placeholder="Height">
+            </div>
+            <div class="form-group">
+                <label class="form-check-label" for="text3">Radius</label>
+                <input @bind="selectedRadius" type="text" class="form-check-input" id="text3" placeholder="Radius">
+            </div>
+            <div class="form-group">
+                <button class="btn-primary btn" @onclick="CheckVolume">Check volume</button>
+            </div>
+            <div class="form-group">
+                <p>The volume is: @volume</p>
+            </div>
+            <button class="btn btn-primary" @onclick="SubmitData">Add</button>
+            
+            @if (successAdded.Length > 0)
+            {
+                <p>@successAdded</p>
+            }
+
+
+    </div>
+
+
+
+</div>
+
+
+@code {
+
+    private decimal selectedHeight { get; set; }
+    private decimal selectedRadius { get; set; }
+
+    private string selectedType = "";
+    private decimal volume { get; set; }
+
+    private string successAdded = "";
+
+
+    private async void CheckVolume()
+    {
+        successAdded = "";
+        if (selectedType.Equals("cone"))
+        {
+            var result = await VolumeService.GetConeVolume(selectedHeight, selectedRadius);
+            volume = result.Volume;
+        } else if (selectedType.Equals("cylinder"))
+        {
+            var result = await VolumeService.GetCylinderVolume(selectedHeight, selectedRadius);
+            volume = result.Volume;
+        }
+        StateHasChanged();
+    }
+
+    private async void SubmitData()
+    {
+        var result = await VolumeService.PostCalculation(selectedType, selectedHeight, selectedRadius);
+        successAdded = result.ToString();
+
+    }
+
+
+}

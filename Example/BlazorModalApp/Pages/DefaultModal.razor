@@ -1,0 +1,79 @@
+﻿@namespace BlazorModalApp.Pages
+
+<div class="modal @modalClass" id="@Guid" tabindex="-1" role="dialog" style="display: @modalDisplay" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                @if (!string.IsNullOrWhiteSpace(ModalTitle))
+                {
+                    <h5 class="modal-title">@ModalTitle</h5>
+                }
+
+                <button type="button" class="close" data-dismiss="modal" data-target="@Guid" aria-label="Close" @onclick="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @ChildContent
+                <p class="text-danger font-weight-bold">@ErrorMessage</p>
+            </div>
+            @if (ShowFooterButtons)
+            {
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" @onclick="CallParentApplyMethod">@SaveChangesButtonText</button>
+                    <button type="button" class="btn btn-outline-default" data-dismiss="modal" data-target="@Guid" @onclick="Close">Close</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@if (showBackdrop)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+
+
+@code {
+    [Parameter]
+    public dynamic Parent { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    public string ModalTitle { get; set; }
+    public string SaveChangesButtonText { get; set; } = "Save";
+    public bool ShowFooterButtons { get; set; } = true;
+
+    public readonly Guid Guid = Guid.NewGuid();
+    private string modalDisplay = "none;";
+    private string modalClass = "";
+    private bool showBackdrop;
+    public string ErrorMessage = "";
+
+    private void CallParentApplyMethod()
+    {
+        if (Parent.Apply())
+        {
+            Close();
+        }
+    }
+
+    public void Open()
+    {
+        modalDisplay = "block;";
+        modalClass = "Show";
+        showBackdrop = true;
+        StateHasChanged();
+    }
+
+    public void Close()
+    {
+        modalDisplay = "none";
+        modalClass = "";
+        showBackdrop = false;
+        ErrorMessage = "";
+        StateHasChanged();
+    }
+}
